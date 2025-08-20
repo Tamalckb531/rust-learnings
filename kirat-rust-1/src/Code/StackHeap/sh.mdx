@@ -1,0 +1,14 @@
+# Stack and Heap in Rust
+
+## Stack :
+
+> A segment of Ram memory given to program while they get executes. The storing and retrieving process in stack doesn't have to take permission from OS so it is fast
+
+## Heap :
+
+> The static memory of Ram. Program stores data there in contiguous memory location. So it is bit slow to get and store data but it works fine for unpredictable data. 
+
+## Rust works :
+
+> Rust saves the data whose memory is fixed like number or boolean in stack. But when we have to store data which memory is not fixed like string, array etc, Rust save them in heap memory in a contiguous location. In the stack it stores the first pointer of that contiguous memory, the length of data and the capacity (assigned by runtime for the variable). That's how rust can execute them from stack in the rust time 
+
