@@ -1,9 +1,6 @@
 fn main() {
-    let sentence = String::from("");
-    let num: i8 = 32;
-    print_num(num);
-}
-
-fn print_num(num: i8) {
-    print!("{}", num);
+    let s1: String = String::from("hello");
+    println!("{} ", s1);
+    let s2: String = s1;
+    println!("{} ", s2);
 }
