@@ -1,0 +1,14 @@
+# String as a collection
+
+>  Rust store string like a collection with two type String and &str.
+> String is a heap allocated, mutable, growable string type. Like the normal store the first address of the string in the stack and the actual string data in th heap
+> &str is an immutable string slice. It is different as it is borrowed. Like we created a String type and passed it to a function as &str type. But if we create an &str type directly, it is stored in the binary file of the program (read only part of RAM). Some interesting fact of Rust that not so common. 
+
+
+## String concatenation
+
+> While concat, rust transfer the ownership of first string to the new string and borrow the reference of other string. So we have to put and & sign before other string
+
+## String Indexing
+
+> We can't do direct [0] index in rust as rust store the character as bytes(u8). So it can take more than  1 byte. Indexing will give half data which might crash program. So rust provide .chars().nth(0).unwrap(); like chain function to safely get char from a string index wise.
