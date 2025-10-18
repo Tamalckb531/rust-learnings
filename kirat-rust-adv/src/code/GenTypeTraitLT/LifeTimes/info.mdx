@@ -1,0 +1,4 @@
+# Life Times in rust
+
+> Now life time is useful when function borrowing their parameter or Struct borrowing it's instance value. Programmer can borrow these from a scope and then call the them or the returned value from out of scope. In language like c and cpp it creates dangling pointer error. But for rust there is Lifetime generic to solve this
+> In rust we use 'a generic for struct and function generic and then use the 'a in the parameter or property which are being borrowed. Now among them, it trace the lifetime of the shortest lifetime once and see if the struct property or function is called out of the shortest lifetime ones scope. If so then it gives lifetime error. Which makes the program safe
